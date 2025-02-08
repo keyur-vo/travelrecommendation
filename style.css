@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color: #110d19;
+  color: whitesmoke;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4em;
+}
+
+.mainLogo {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mainLogo i.fa-solid{
+  font-size: 20px;
+  margin-right: 0.3em;
+}
+ul{
+  width: 30%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  order: 1;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.serchBox {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.serchBox input{
+  width: 60%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+} 
+.serchBox button{
+  padding: 0.5em 1em;
+  background-color: #22eaa0;
+  color: #110d19;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5em;
+}
+.container{
+  height: calc(100vh - 4em);
+  background: url("https://files.oaiusercontent.com/file-EGj47xRUeRRZdQU7CrEhM8?se=2025-02-08T14%3A02%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9c34b615-4432-45ac-9ab8-f5af83814233.webp&sig=sJB8DX4bufoEa0omnyUnfS%2BqKS7oOxg7QCMsnfio79Q%3D"), linear-gradient(to right, rgba(0, 18, 0, 0.861),rgba(250, 244, 244, 0.171));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-blend-mode: overlay;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links{
+  position: absolute;
+  top: 5%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90%;
+  padding-left: 0.5em;
+}
+.vertical-line{
+  background-color: white;
+  width: 5px;
+  height: 30%;
+  margin-top: 3em;
+  margin-bottom: 7em;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.hero-content{
+  width: 50%;
+  color: whitesmoke;
+  padding: 9em 6em;
+}
+.hero-content > h1,
+.hero-content > button,
+.hero-content > p{
+  text-shadow: 0px 0px 10px #000;
+  margin-top: 2rem;
+  margin-left: 1rem;
+
+}
+.hero-content h1{
+  font-size: 3em;
+}
+.hero-content p{
+  font-size: 1.2em;
+}
+.hero-content button{
+  text-shadow: none;
+  padding: 1em 2em;
+  background-color: #22eaa0;
+  color: #110d19;
+  border: 2px solid #110d19;
+  border-radius: 4px;
+}
+.hero-content button:hover{
+  background-color: #110d1928;
+  color: #22eaa0;
+  border: 2px solid #22eaa0;
+}
+.searchResults{
+  width: 30%;
+  padding: 2em 1em;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card{
+  padding-top: 1em;
+  width: 100%;
+  background-color: rgba(245, 247, 248, 0.891);
+  color: #000;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.card img{
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+.card > .btn{
+  margin-top: 0.2em;
+  padding: 0.5em 1em;
+  background-color: #01110b;
+  width: 100%;
+  color: aliceblue;
+}
+.about-hero-content{
+  width: 90%;
+  color: whitesmoke;
+  padding: 6em 0em 0em 6em;
+}
+.about-hero-content > section > h1{
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+.about-hero-content > section.hero > div{
+  font-size: 1em;
+  padding: 2em 1em;
+  background-color: #110d199f;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+.team{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3em 5em;
+}
+.team h2{
+  font-size: 3em;
+  margin-bottom: 1.5em;
+}
+.team-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-hero-content > section div.team-member{
+  font-size: 1em;
+  padding: 2em 1em;
+  background-color: #110d199f;
+  border-radius: 6px;
+}
+.about-hero-content > section div.team-member > *{
+  margin-bottom: 0.4em;
+}
+.team-member .role{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #186ec4a5;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  margin-top: 0.5em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+}
+.team-member .role:hover{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #22eaa12b;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  margin-top: 0.5em;
+}
+
+.contact-hero-content{
+  width: 70%;
+  padding: 6em 3em 0em;
+  color: white;
+  margin: 0 auto;
+}
+.contact-hero-content section{
+
+  margin: 5em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-hero-content section > .contact-info{
+  width: 20%;
+}
+.contact-hero-content section > .contact-content{
+  width: 60%;
+}
+.contact-hero-content div.contact-content > form{
+  padding: 1em;
+  background-color: #110d194b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-hero-content div.contact-content > form > *:not(label){
+  background-color: #110d199f;
+  padding: 0.5em 0.7em;
+  margin-bottom: 0.9em;
+  border: 0.5px solid whitesmoke;
+  outline: none;
+  color: whitesmoke;
+}
+textarea{
+  height: 100px;
+  overflow-y: auto;
+  resize: none;
+}
+.contact-hero-content div.contact-content > form > button.submit{
+  background-color: #186ec4a5;
+  color: white;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+.contact-hero-content div.contact-content > form > button.submit:hover{
+  background-color: #064b2c84;;
+}
+::placeholder{
+  color: rgb(255, 255, 255);
+}
+
+
