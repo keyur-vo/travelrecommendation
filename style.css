@@ -34,6 +34,10 @@ a{
   text-decoration: none;
   color: whitesmoke;
 }
+a:hover{
+  color: #22eaa0;
+  transition: color 0.2s ease-in-out;
+}
 
 .serchBox {
   width: 50%;
@@ -51,13 +55,18 @@ a{
   padding: 0.5em 1em;
   background-color: #22eaa0;
   color: #110d19;
-  border: none;
+  border: 1px solid #22eaa0;
   border-radius: 5px;
   margin-left: 0.5em;
 }
+.serchBox button:hover{
+  background-color: transparent;
+  color: #22eaa0;
+  border: 1px solid #22eaa0;
+}
 .container{
   height: calc(100vh - 4em);
-  background: url("https://files.oaiusercontent.com/file-EGj47xRUeRRZdQU7CrEhM8?se=2025-02-08T14%3A02%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9c34b615-4432-45ac-9ab8-f5af83814233.webp&sig=sJB8DX4bufoEa0omnyUnfS%2BqKS7oOxg7QCMsnfio79Q%3D"), linear-gradient(to right, rgba(0, 18, 0, 0.861),rgba(250, 244, 244, 0.171));
+  background: url("./images/travelrecommendation\ image.webp"), linear-gradient(to right, rgba(0, 18, 0, 0.861),rgba(250, 244, 244, 0.171));
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -91,6 +100,10 @@ a{
   color: whitesmoke;
   font-size: 2em;
   margin-top: 0.5em;
+}
+.social-links a:hover{
+  color: #22eaa0;
+  transition: color 0.2s ease-in-out;
 }
 
 .hero-content{
@@ -152,6 +165,21 @@ a{
   background-color: #01110b;
   width: 100%;
   color: aliceblue;
+}
+.cancel-card{
+  background-color: #22eaa0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: darkgreen;
+  padding: 0.4em;
+  font-weight: 900;
+}
+.cancel-card button{
+  background-color: transparent;
+  padding: 0.3em;
+  color: darkgreen;
+  border: none;
 }
 .about-hero-content{
   width: 90%;

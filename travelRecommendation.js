@@ -12,7 +12,9 @@ function displayTravelRecommendation() {
   .then(response => response.json())
   .then(data => {
     for(let key in data){
-      if(key.toLowerCase().includes(inputVal)){
+     
+     
+    if((key.toLowerCase().startsWith(inputVal)) && key !== "countries"){
           for(let i = 0; i < data[key].length; i++){
             let div = document.createElement('div');
             div.classList.add("card")
@@ -25,10 +27,19 @@ function displayTravelRecommendation() {
               return;
             }
            }
-    }else{
-      if(key === "countries"){
+    }else if(key === "countries"){
+
+      if(key.toLowerCase().startsWith(inputVal)){
+        let div = document.createElement('div');
+            div.classList.add("cancel-card")
+            div.innerHTML = `Please enter valid country name <button onclick="clearTab()"><i class="fa-solid fa-xmark"></i></button>`
+            searchResults.appendChild(div);
+            return;
+      }
+
+
         for(let i = 0; i < data[key].length; i++){
-          if(data[key][i].name.toLowerCase().includes(inputVal)){
+          if(data[key][i].name.toLowerCase().startsWith(inputVal)){
             for (let j = 0; j < data[key][i].cities.length; j++){
               let div = document.createElement('div');
               div.classList.add("card")
@@ -45,18 +56,34 @@ function displayTravelRecommendation() {
           }
           
           }
+      }else{
+            if("temples".startsWith(inputVal) || "beaches".startsWith(inputVal) ){
+              continue;
+            }
+            let div = document.createElement('div');
+            div.classList.add("cancel-card")
+            div.innerHTML = `Please enter valid keywords e.g. beaches, temples <button onclick="clearTab()"><i class="fa-solid fa-xmark"></i></button>`
+            searchResults.appendChild(div);
+            return;
       }
+     
+          
    }
   }
-})
+)
   .catch(err => console.log(err))
 
   }
   
 }
 
-searchBtn.addEventListener('click', displayTravelRecommendation);
-resestBtn.addEventListener('click', () => {
+function clearTab(){
   searchResults.innerHTML = "";
   document.getElementById('search').value = "";
-})
+}
+searchBtn.addEventListener('click', displayTravelRecommendation);
+resestBtn.addEventListener('click', clearTab)
+
+
+
+
