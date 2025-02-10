@@ -57,7 +57,7 @@ a{
 }
 .container{
   height: calc(100vh - 4em);
-  background: url("https://files.oaiusercontent.com/file-EGj47xRUeRRZdQU7CrEhM8?se=2025-02-08T14%3A02%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9c34b615-4432-45ac-9ab8-f5af83814233.webp&sig=sJB8DX4bufoEa0omnyUnfS%2BqKS7oOxg7QCMsnfio79Q%3D"), linear-gradient(to right, rgba(0, 18, 0, 0.861),rgba(250, 244, 244, 0.171));
+  background: url("https://thumbs.dreamstime.com/b/silhouette-city-building-street-vector-illustration-78176236.jpg"), linear-gradient(to right, rgba(0, 18, 0, 0.861),rgba(250, 244, 244, 0.171));
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
